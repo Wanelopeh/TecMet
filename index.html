@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" type="image/x-icon" href="src/images/logotec.png">
+    <title>TecMet</title>
+</head>
+<body>
+ 
+<section class="section-1">
+    <nav class="menu-lateral">
+        <div class="btn-expandir">
+            <i class="bi bi-list"></i>
+        </div>
+    
+        <ul>
+            <li class="item-menu">
+                <a href="index.html">
+                    <span class="icon"><i class="bi bi-house"></i></i></span>
+                    <span class="txt-link">Home</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="https://conscious-flock-b03.notion.site/Term-metro-Inteligente-31fda0c44b5647c38d9d61bc6325657b" target="_blank">
+                    <span class="icon"><i class="bi bi-thermometer-high"></i></i></span>
+                    <span class="txt-link">Termômetro Inteligente</span>
+                </a>
+            </li>
+            <li id="conta" class="item-menu" title="Em breve">
+                <a href="#">
+                    <span class="icon"><i class="bi bi-person-circle"></i></span>
+                    <span class="txt-link">Conta</span>
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</section>  
+
+<section class="section-2">
+    <div id="container">
+
+       <div id="header"> 
+            <div id="logotipo">
+                <a>
+                    <img src="/src/images/logotec.png" style="height: 70px; width: 70px;">
+                </a>
+            </div>
+
+            <form id="search">
+                <i class="fa-solid fa-location-dot"></i>
+                <input class="input_search"
+                    type="search" 
+                    name="city_name" 
+                    id="city_name" 
+                    autocomplete="off"
+                    placeholder="Buscar cidade">
+                    
+                <button type="submit"> <!--Submit é um type que possibilita enviar os dados para o manipulador do formulario-->
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+
+        <div id="area-compra">
+            <a id="compra" class="bi bi-thermometer-high">
+                <a id="compra-txt" href="https://conscious-flock-b03.notion.site/Term-metro-Inteligente-31fda0c44b5647c38d9d61bc6325657b" target="_blank">
+                    <span>Termômetro Inteligente</span>
+            </a>
+        </div>
+
+        </div>
+
+        <div id="weather" class="">
+            <h1 id="title">São Paulo, BR</h1>
+
+          <section id="dias-da-semana"> 
+                <div class="temp">
+                    <img id="temp_img" src="" alt="">
+
+                    <div>
+                        <p id="temp_value">
+                            32 <sup>ºC</sup>
+                        </p>
+                        <p id="temp_description">
+                            Ensolarado
+                        </p>
+                    </div>
+                </div>
+
+                <div id="other_infos">
+                    <div class="info">
+                        <i id="temp_max_icon" class="fa-solid fa-temperature-high"></i>
+                        <div>
+                            <h2>Temp. max</h2>
+
+                            <p id="temp_max">
+                                32 <sup>Cº</sup>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="info">
+                        <i id="temp_min_icon" class="fa-solid fa-temperature-low"></i>
+                        <div>
+                            <h2>Temp. min</h2>
+
+                            <p id="temp_min">
+                                12 <sup>Cº</sup>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="info">
+                        <i id="humidity_icon" class="fa-solid fa-droplet"></i>
+                        <div>
+                            <h2>Humidade</h2>
+
+                            <p id="humidity">
+                                50%
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="info">
+                        <i id="wind_icon" class="fa-solid fa-wind"></i>
+                        <div>
+                            <h2>Vento</h2>
+
+                            <p id="wind">
+                                50% km/h
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+        </div>
+
+        <div id="alert"></div>
+    </div>
+    <script src="src/javaScript/script.js"></script>
+</section>
+
+</body>
+</html>
